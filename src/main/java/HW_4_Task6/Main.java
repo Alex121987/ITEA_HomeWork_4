@@ -2,7 +2,6 @@ package HW_4_Task6;
 
 /**
  * Створіть проект з класом Main.java.
- *
  * Створити клас, який представляє навчальний клас ClassRoom. Створіть клас учень Pupil.
  * У тілі класу створіть методи void study(), void read(), void write(), void relax().
  * Створіть 3 похідні класу ExcelentPupil, GoodPupil, BadPupil від класу базового класу Pupil і
@@ -20,30 +19,30 @@ public class Main {
 
         ClassRoom classRoom = new ClassRoom(pupil, excellentPupil, goodPupil, badPupil);
 
-        classRoom.pupil1.study();
-        classRoom.pupil1.read();
-        classRoom.pupil1.write();
-        classRoom.pupil1.relax();
+        classRoom.getPupil1().study();
+        classRoom.getPupil1().read();
+        classRoom.getPupil1().write();
+        classRoom.getPupil1().relax();
 
         System.out.println();
 
-        classRoom.pupil2.study();
-        classRoom.pupil2.read();
-        classRoom.pupil2.write();
-        classRoom.pupil2.relax();
+        classRoom.getPupil2().study();
+        classRoom.getPupil2().read();
+        classRoom.getPupil2().write();
+        classRoom.getPupil2().relax();
 
         System.out.println();
 
-        classRoom.pupil3.study();
-        classRoom.pupil3.read();
-        classRoom.pupil3.write();
-        classRoom.pupil3.relax();
+        classRoom.getPupil3().study();
+        classRoom.getPupil3().read();
+        classRoom.getPupil3().write();
+        classRoom.getPupil3().relax();
 
         System.out.println();
 
-        classRoom.pupil4.study();
-        classRoom.pupil4.read();
-        classRoom.pupil4.write();
-        classRoom.pupil4.relax();
+        classRoom.getPupil4().study();
+        classRoom.getPupil4().read();
+        classRoom.getPupil4().write();
+        classRoom.getPupil4().relax();
     }
 }
