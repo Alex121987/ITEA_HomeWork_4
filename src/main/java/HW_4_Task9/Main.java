@@ -19,13 +19,13 @@ public class Main {
     public static void main(String[] args) {
         Printer printer1 = new Printer();
         Printer printer2 = new Printer();
-        Printer laserPrinter1 = new LaserPrinter();
+        Printer laserPrinter1 = new LaserPrinter(); // upcasting
         MatrixPrinter matrixPrinter1 = new MatrixPrinter();
         LaserPrinter laserPrinter2 = new LaserPrinter();
-        Printer matrixPrinter2 = new MatrixPrinter();
+        Printer matrixPrinter2 = new MatrixPrinter(); // upcasting
 
         printer1.print("printer1");
-        laserPrinter1.print("laser printer1");
+        ((LaserPrinter)laserPrinter1).print("laser printer1"); // downcasting
         matrixPrinter1.print("matrix printer1");
         laserPrinter2.print("laser printer2");
         matrixPrinter2.print("matrix printer2");
